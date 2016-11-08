@@ -1,3 +1,22 @@
 .logo{
 	width: 25%;
+	margin-left: 38%;
+	margin-top: 2%;
+}
+.btn-a {
+	margin-top: 16%;
+	margin-left: 40%;
+}
+.lighten-5{
+	color: black;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.logo{
+		margin: 6rem 8rem 17rem;
+	}
+	.btn-a{
+		margin: 3rem;
+	}
 }

@@ -3,12 +3,12 @@ body{
 }
 .loading{
 	background-image: url(../img/loading.gif);
-	background-position:right;
+	background-position:center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
 	position: absolute;
-	width: 100vh;
+	width: 100vw;
 	z-index: 200;
 }
 .home{
@@ -17,7 +17,7 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
-	width: 100vh;
+	width: 100vw;
 	z-index: 200;
 }
 .logo{
@@ -26,7 +26,7 @@ body{
 	margin-top: 2%;
 }
 .btn-a {
-	margin: 25rem 11rem;
+	margin: 10rem 33rem;
 }
 .btn-login{
 	color: white;
@@ -42,11 +42,14 @@ body{
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	.logo{
-		margin: 6rem 5rem 12rem;
+		margin: 6rem 4rem 12rem;
 		width: 13rem;
 	}
 	.btn-a {
-		margin: 5rem 0.2rem;
+		margin: 0 auto;
+	}
+	.btn-login{
+		margin: 7px;
 	}
 }
 

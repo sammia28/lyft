@@ -1,22 +1,59 @@
+body{
+	font-family: 'Raleway', sans-serif;
+}
+.loading{
+	background-image: url(../img/loading.gif);
+	background-position:right;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	position: absolute;
+	width: 100vh;
+	z-index: 200;
+}
+.home{
+	background-image: url(../img/carretera.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vh;
+	z-index: 200;
+}
 .logo{
 	width: 25%;
-	margin-left: 38%;
+	margin-left: 36%;
 	margin-top: 2%;
 }
 .btn-a {
-	margin-top: 16%;
-	margin-left: 40%;
-}
-.lighten-5{
-	color: black;
+	margin: 25rem 11rem;
 }
 
-
+.btn-login{
+	color: white;
+	background: transparent;
+	border: 1px solid white;
+	font-size: x-large;
+	margin-right: 23px;
+}
+.btn-signup{
+	color: white;
+	border: 1px solid white;
+	font-size: x-large;
+}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	.logo{
-		margin: 6rem 8rem 17rem;
+		margin: 6rem 5rem 12rem;
+		width: 13rem;
 	}
-	.btn-a{
-		margin: 3rem;
+	.btn-a {
+		margin: 5rem 0.2rem;
 	}
+}
+
+
+/*sign-up*/
+.bandera-peru{
+	width: 20px;
+	height: 15px;
 }

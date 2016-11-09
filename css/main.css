@@ -8,7 +8,7 @@ body{
 	background-size: cover;
 	height: 100vh;
 	position: absolute;
-	width: 100vh;
+	width: 100vw;
 	z-index: 200;
 }
 .home{
@@ -17,16 +17,16 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
-	width: 100vh;
+	width: 100vw;
 	z-index: 200;
 }
 .logo{
 	width: 25%;
-	margin-left: 36%;
-	margin-top: 2%;
+	margin-top: 12%;
+
 }
 .btn-a {
-	margin: 25rem 11rem;
+	margin: 11rem 34rem 0;
 }
 
 .btn-login{
@@ -34,7 +34,6 @@ body{
 	background: transparent;
 	border: 1px solid white;
 	font-size: x-large;
-	margin-right: 23px;
 }
 .btn-signup{
 	color: white;
@@ -43,11 +42,10 @@ body{
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	.logo{
-		margin: 6rem 5rem 12rem;
 		width: 13rem;
 	}
 	.btn-a {
-		margin: 5rem 0.2rem;
+		margin: 16rem 0.6rem;
 	}
 }
 

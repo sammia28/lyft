@@ -1,6 +1,7 @@
 body{
 	font-family: 'Raleway', sans-serif;
 }
+/*index-html*/
 .loading{
 	background-image: url(../img/loading.gif);
 	background-position:center;
@@ -52,7 +53,41 @@ body{
 
 
 /*sign-up*/
-.bandera-peru{
-	width: 20px;
-	height: 15px;
+.contener-opciones{
+	border: 2px solid #F5F2F0;
+	margin: 13px 19px -2px;
+	padding: 0;
+	border-radius: 10px;
 }
+#first-number{
+	width: 100%;
+	margin: 0;
+	padding: 0 1rem;
+	border: none;
+}
+.icon-sepadr{
+	padding-top: 18px;
+	border-right: 2px solid #F5F2F0;
+	padding-bottom: 17px;
+}
+
+.bandera .bandera-peru {
+	padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

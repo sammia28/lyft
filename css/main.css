@@ -1,6 +1,19 @@
 body{
 	font-family: 'Raleway', sans-serif;
 }
+h5{
+	margin-top: 2rem;
+}
+.subtema{
+	margin-bottom: 0;
+}
+.retroceder{
+	color: #5F5F5F;
+	margin: 19px 0px;
+}
+.btn-envio{
+	margin-top: 15rem;
+}
 /*index-html*/
 .loading{
 	background-image: url(../img/loading.gif);
@@ -75,10 +88,42 @@ body{
 	padding-top: 15px;
 }
 
+/*verify*/
+.resend-code{
+	background: transparent;
+	color: black;
+	border: 1px solid #5F5F5F;
+}
+.codigo{
+	margin-left: 2rem;
+}
 
 
 
-
+/*dato-usuario*/
+.dato-user{
+	padding: 0;
+	margin: 0;
+	border: 1px solid #C1C1C1;
+	border-radius: 5px;
+}
+.user-icon{
+	padding-top: 1rem;
+}
+.cont-dato{
+	margin: 0;
+}
+.input-field #name, .input-field #last-name, .col #last_name  {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+.form-datos{
+	margin-bottom: 0px;
+}
+.check-terms{
+	margin: 3rem 0 0 2rem;
+}
 
 
 

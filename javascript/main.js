@@ -11,6 +11,12 @@ $(document).ready(function (){
 			return true;  
 		}  
 		return false;  
-	}); 
+	}); 	
+
+//	almacenar numero en local localStorage
+	$("#envioNumero").click(function(){
+		$("#agrega-numero").html("Hello <b>world!</b>");
+	});	
+
 });
 

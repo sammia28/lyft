@@ -12,7 +12,8 @@ h5{
 	margin: 19px 0px;
 }
 .btn-envio{
-	margin-top: 15rem;
+	position: absolute;
+	bottom: 0px;
 }
 /*index-html*/
 .loading{

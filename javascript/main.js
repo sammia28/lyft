@@ -19,17 +19,25 @@ $(document).ready(function (){
 		if(numeroCodigoRandom == window.localStorage.getItem("numeroRandom")) {
 			return true
 		}else{
-			alert ("Codigo incorrecto");
+			alert ("Incorret Code");
 			return false;
 		}
+	});
 	
-
-	})
+	function saltarCodigo(e) {
+		var longitud = $(this).val().length;
+		var ascii = e.keyCode;
+		if (longitud == 1) {
+			$(this).parent().next().children().focus();
+		}else if(ascii == 8 {
+				 $(this).parent().prev().children().focus();    
+	}else{
+		alert("Incorret Code");
+	}
+}
 	
 	
 	
 	
-//	almacenar numero en local localStorage
-
 });
 

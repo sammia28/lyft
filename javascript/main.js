@@ -23,21 +23,12 @@ $(document).ready(function (){
 			return false;
 		}
 	});
-	
-	function saltarCodigo(e) {
-		var longitud = $(this).val().length;
-		var ascii = e.keyCode;
-		if (longitud == 1) {
-			$(this).parent().next().children().focus();
-		}else if(ascii == 8 {
-				 $(this).parent().prev().children().focus();    
-	}else{
-		alert("Incorret Code");
-	}
-}
-	
-	
-	
-	
+	/*
+		$("#dig1").focus();
+	$(".cnum").keyup(saltaFocus);*/
+
+
+
+
 });
 

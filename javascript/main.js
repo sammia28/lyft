@@ -15,7 +15,7 @@ $(document).ready(function (){
 		return false;  
 	}); 	
 	$("#verifica").click(function(){
-		var numeroCodigoRandom =  	$(".inputcode").eq(0).val() + $(".inputcode").eq(1).val() + $(".inputcode").eq(2).val() + $(".inputcode").eq(3).val();
+		var numeroCodigoRandom =  	$(".add-js-inputcode").eq(0).val() + $(".add-js-inputcode").eq(1).val() + $(".add-js-inputcode").eq(2).val() + $(".add-js-inputcode").eq(3).val();
 		if(numeroCodigoRandom == window.localStorage.getItem("numeroRandom")) {
 			return true
 		}else{

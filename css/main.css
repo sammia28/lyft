@@ -98,6 +98,11 @@ h5{
 .codigo{
 	margin-left: 2rem;
 }
+input.col.s1.m2.col.offset-s1.offset-m-1.add-js-inputcode, 
+input.col.s1.m2.col.offset-s2.offset-m-1.add-js-inputcode {
+	padding: 8px;
+}
+
 
 
 

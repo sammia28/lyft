@@ -7,7 +7,6 @@ $(document).ready(function (){
 	var numeroIngresado = window.localStorage.getItem("numCelular");
 	var generaNunRandom = window.localStorage.getItem("numeroRandom");
 
-
 	$("#first-number").keyup(function (){
 		var numCelIngresado = $("#first-number").val();
 		this.value = (this.value + "").replace(/[^0-9]/g, '');
@@ -41,9 +40,19 @@ $(document).ready(function (){
 		}		
 	});
 
+		$("#verificaDato").click(function(){
+			
+			$("#email").keyup(function(){
+				var emailUser = $("#email").val();
+				this.value = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,4}$/;
+				window.localStorage.setItem("emailIngresado", emailUser);
+				if(emailUser == ""){
+					alert("The email is wrong")
+				}
+			});
+		})
+
+
 });
 
 					
-
-
-		

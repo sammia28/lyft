@@ -19,7 +19,7 @@ $(document).ready(function (){
 			return true;  
 			$("#cel").text(localStorage.getItem("numCelular")); 
 		}else{
-			alert("Incorret number");
+			alert("The number is wrong");
 			return false;
 		}
 	}); 
@@ -33,7 +33,7 @@ $(document).ready(function (){
 		if(numeroCodigoRandom == window.localStorage.getItem("numeroRandom")) {
 			return true
 		}else{
-			alert ("Incorret Code");
+			alert ("The code is wrong");
 			return false;
 		}		
 	});

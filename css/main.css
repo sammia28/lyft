@@ -131,7 +131,12 @@ input.col.s1.m2.col.offset-s2.offset-m-1.add-js-inputcode {
 }
 
 
-
+/*mapa*/
+.mapa{
+	width: 100%;
+	height: 100vh;
+	
+}
 
 
 

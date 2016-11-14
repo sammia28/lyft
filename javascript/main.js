@@ -2,40 +2,27 @@ $(document).ready(function(){
 	$(".loading").fadeOut(4000);
 });
 
-
 $(document).ready(function (){
+
+	var obtNumCel = $("#first-number").val();
 	$("#first-number").keyup(function (){
 		this.value = (this.value + "").replace(/[^0-9]/g, '');
-		window.localStorage.setItem("numCelular",obtNum);
+		window.localStorage.setItem("numCelular", obtNumCel);
 	});
-
-
-	$("#envioNumero").click(function () {  
+	$("#envioNumero").click(function() {  
 		if($("#first-number").val().length == 9) { 
 
-			window.localStorage.setItem("numeroRandom", parseInt(Math.random() * 10).toString() + parseInt(Math.random().toString() * 10) + parseInt(Math.random() * 10).toString() + parseInt(Math.random() * 10).toString());
+			var codigoRandom = parseInt(Math.random() * 10).toString() + parseInt(Math.random().toString() * 10) + parseInt(Math.random() * 10).toString() + parseInt(Math.random() * 10).toString()
+
+			window.localStorage.setItem("numeroRandom", codigoRandom );
 			alert(window.localStorage.getItem("numeroRandom"));
 			return true;  
+			$("#cel").text(localStorage.getItem("numCelular")); 
 		}else{
+			alert("Incorret number");
 			return false;
 		}
-
-		$("#cel").text("lalal");
-
 	}); 
-
-
-	$("#envioNumero").click(function(){
-		
-		$("#cel").text(localStorage.getItem("numCelular"));
-		var obtNum = $("#numCelular").val();
-
-
-	});
- 
-	$("#celu").text(localStorage.getItem("celular")); 
-var obtNum = $("#numeros").val();
-		localStorage.setItem("celular", obtNum);
 
 
 
@@ -50,10 +37,6 @@ var obtNum = $("#numeros").val();
 			return false;
 		}		
 	});
-
-
-
-
 });
 
 /*	almacenar numero*/

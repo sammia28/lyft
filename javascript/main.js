@@ -24,12 +24,10 @@ $(document).ready(function (){
 			return false;
 		}
 	}); 
-
 	$("#cel").text(numeroIngresado);
 	$("#newCode").click(function(){
 		alert(generaNunRandom);
 	});
-	
 	$("#verifica").click(function(){
 		var numeroCodigo = $(".add-js-inputcode").eq(0).val() + $(".add-js-inputcode").eq(1).val() + $(".add-js-inputcode").eq(2).val() + $(".add-js-inputcode").eq(3).val();
 		if(numeroCodigo == generaNunRandom) {
@@ -39,18 +37,49 @@ $(document).ready(function (){
 			return false;
 		}		
 	});
+	// validar datos
 
-		$("#verificaDato").click(function(){
-			
-			$("#email").keyup(function(){
-				var emailUser = $("#email").val();
-				this.value = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,4}$/;
-				window.localStorage.setItem("emailIngresado", emailUser);
-				if(emailUser == ""){
-					alert("The email is wrong")
-				}
-			});
-		})
+	var expreText =  /^[a-zA-Z0-9._-]/;
+
+	$("#verificaDato").click(function(){
+		if($("#name").val().length > 0 || name == expreText.test()){
+			var name = $("#name").val();
+			var nameUser = window.localStorage.setItem("registroName", name);
+			return true;
+	    }else{
+	       alert("Register your name");
+	    	return false;
+	    }
+	});	
+	$("#verificaDato").click(function(){
+		if($("#last-name").val().length > 0 || lastName == expreText.test()){
+			var lastName = $("#last-name").val();
+			var lastNameUser = window.localStorage.setItem("registroLastName", lastName);
+			return true;
+	    }else{
+	       alert("Register your last Name");
+	    	return false;
+	    }
+	});	
+	var emailExpre = /^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@‌​(?:[^<>()[\].,;:\s@"‌​]+\.)+[^<>()[\]\.,;:‌​\s@"]{2,63}$/i;
+	$("#verificaDato").click(function(){
+		if($("#email").val().length > 0 || email == emailExpre.test()){
+			var email = $("#email").val();
+			var emailUser = window.localStorage.setItem("registroEmail", email);
+			return true;
+	    }else{
+	       alert("Register a valid email");
+	    	return false;
+	    }
+	});	
+	$("#verificaDato").click(function(){
+        var condiciones = $("#test5").is(":checked");
+        if (!condiciones) {
+            alert("Accept the conditions");
+            return false;
+        }
+    });
+
 
 
 });

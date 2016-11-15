@@ -7,6 +7,7 @@ $(document).ready(function (){
 	var numeroIngresado = window.localStorage.getItem("numCelular");
 	var generaNunRandom = window.localStorage.getItem("numeroRandom");
 
+
 	$("#first-number").keyup(function (){
 		var numCelIngresado = $("#first-number").val();
 		this.value = (this.value + "").replace(/[^0-9]/g, '');
@@ -78,8 +79,7 @@ $(document).ready(function (){
             alert("Accept the conditions");
             return false;
         }
-    });
-
+    });	
 
 
 });

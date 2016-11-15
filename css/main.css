@@ -148,9 +148,28 @@ input.col.s1.m2.col.offset-s2.offset-m-1.add-js-inputcode {
 .menu-option{
 	width: 60%;
 }
-
-
-
+.h-optionLi{
+	height: 4.5rem;
+}
+#address.buscador{
+	position: absolute;
+	margin-top: -41.5rem;
+	background: #FAFAFA;
+	width: 100vw;
+	height: 3rem;
+	border: 1px solid gray;
+	padding-left: 9px;
+}
+input#search {
+    margin-top: -41.2rem;
+    background: #E7E7E7;
+    position: absolute;
+    padding: 0px 7px;
+    margin-left: 18rem;
+    color: black;
+    font-weight: 900;
+    font-size: 10px;
+}
 
 
 

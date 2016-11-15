@@ -14,7 +14,7 @@ $(document).ready(function (){
 		window.localStorage.setItem("numCelular", numCelIngresado);
 	});
 
-	$("#envioNumero").click(function() {  
+	$("#envioNumero").click(function(){  
 		if($("#first-number").val().length == 9){ 
 			var codigoRandom = Math.floor(Math.random()*9000)+900;
 			var numeroRandom = window.localStorage.setItem("numeroRandom", codigoRandom);
@@ -32,7 +32,7 @@ $(document).ready(function (){
 	$("#verifica").click(function(){
 		var numeroCodigo = $(".add-js-inputcode").eq(0).val() + $(".add-js-inputcode").eq(1).val() + $(".add-js-inputcode").eq(2).val() + $(".add-js-inputcode").eq(3).val();
 		if(numeroCodigo == generaNunRandom) {
-			return true
+			return true;
 		}else{
 			alert ("The code is wrong");
 			return false;

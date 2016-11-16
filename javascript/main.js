@@ -1,16 +1,13 @@
 $(document).ready(function(){
 	$(".loading").fadeOut(4000);
 });
-
 $(document).ready(function (){
-
 	var numeroIngresado = window.localStorage.getItem("numCelular");
 	var generaNunRandom = window.localStorage.getItem("numeroRandom");
 
-
-	$("#first-number").keyup(function (){
-		var numCelIngresado = $("#first-number").val();
-		this.value = (this.value + "").replace(/[^0-9]/g, '');
+    $("#first-number").keyup(function (){		  	
+  		var numCelIngresado = $("#first-number").val();		  		
+   		this.value = (this.value + "").replace(/[^0-9]/g, '');
 		window.localStorage.setItem("numCelular", numCelIngresado);
 	});
 
@@ -25,10 +22,12 @@ $(document).ready(function (){
 			return false;
 		}
 	}); 
+
 	$("#cel").text(numeroIngresado);
 	$("#newCode").click(function(){
 		alert(generaNunRandom);
 	});
+
 	$("#verifica").click(function(){
 		var numeroCodigo = $(".add-js-inputcode").eq(0).val() + $(".add-js-inputcode").eq(1).val() + $(".add-js-inputcode").eq(2).val() + $(".add-js-inputcode").eq(3).val();
 		if(numeroCodigo == generaNunRandom) {
@@ -41,7 +40,6 @@ $(document).ready(function (){
 	// validar datos
 
 	var expreText =  /^[a-zA-Z0-9._-]/;
-
 	$("#verificaDato").click(function(){
 		if($("#name").val().length > 0 || name == expreText.test()){
 			var name = $("#name").val();
@@ -62,8 +60,8 @@ $(document).ready(function (){
 	    	return false;
 	    }
 	});	
-	var emailExpre = /^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@‌​(?:[^<>()[\].,;:\s@"‌​]+\.)+[^<>()[\]\.,;:‌​\s@"]{2,63}$/i;
 	$("#verificaDato").click(function(){
+	var emailExpre = /^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@‌​(?:[^<>()[\].,;:\s@"‌​]+\.)+[^<>()[\]\.,;:‌​\s@"]{2,63}$/i;
 		if($("#email").val().length > 0 || email == emailExpre.test()){
 			var email = $("#email").val();
 			var emailUser = window.localStorage.setItem("registroEmail", email);

@@ -8,108 +8,113 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/materialize.css">
 		<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
-  		<a href="#" data-activates="slide-out" class="button-collapse">
-	  		<div class="row top-map-user">
-				<div class="col s1">
-			  		<i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
-				</div>
-				<div class="col s3 offset-s3">
-					<img src="img/logo-lyft.png" class="logo-lyft-mapa">
-				</div>
-	  		</div>
-  		</a>
-  		<div class="row">
-			<ul id="slide-out" class="side-nav menu-option">
-	    		<li class="col 12">
-		    		<div class="row">
-		    			<div class="userView">
-						  	<i class="fa fa-user-circle fa-4x" aria-hidden="true"></i>
-		    			</div>
-		    		</div>
-	    		</li>
-	    		<li class="col 12">
-		    		<div class="row">
-		    			<div class="col s9">
-							<span id="nombreUser" class="center-align"></span>
-							<h6 class="center-align">View profile</h6>
-						</div>
-		    		</div>
-	    		</li>
-	    		<li class="col 12 h-optionLi">
-	    		<hr>
-					<div class="row">
-						<div class="col s2">
-							<i class="fa fa-home fa-2x" aria-hidden="true"></i>
-						</div>
-						<div class="col s9">
-	    					<a class="" href="#">Home</a>
-						</div>
+		<div class="row option-map-menu">
+	  		<span data-activates="slide-out" class="button-collapse">
+				<i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+	  		</span>
+	  		<img src="img/logo-lyft.png" class="logo-lyft-mapa">
+		</div>
+		<ul id="slide-out" class="side-nav menu-option">
+    		<li class="col s12">
+	    		<div class="row avatar-user">
+	  			  	<i class="fa fa-user-circle fa-4x" aria-hidden="true"></i>
+	    		</div>
+    		</li>
+    		<li class="col s12">
+	    		<div class="row center-align">
+					<span id="nombreUser"></span>
+					<a href="perfil-user.html">
+						<h6 class="center-align">View profile</h6>
+					</a>
+	    		</div>
+    		</li>
+    		<li class="col s12 h-optionLi">
+    		<hr>
+				<div class="row">
+					<div class="col s2">
+						<i class="fa fa-home fa-2x" aria-hidden="true"></i>
 					</div>
-	    		</li>
-	    		<li class="col 12 h-optionLi">
-	    		<hr>
-					<div class="row">
-						<div class="col s2">
-							<i class="fa fa-gift fa-2x" aria-hidden="true"></i>
-						</div>
-						<div class="col s9">
-	    					<a class="" href="#">Free Rides</a>
-						</div>
+					<div class="col s9">
+    					<a class="" href="#">Home</a>
 					</div>
-	    		</li>
-	    		<li class="col 12 h-optionLi">
-	    		<hr>
-		    		<div class="row">
-		    			<div class="col s2">
-		    				<i class="fa fa-history fa-2x" aria-hidden="true"></i>
-		    			</div>
-		    			<div class="col s10">
-	    					<a class="" href="#">Ride history</a>
-		    			</div>
-		    		</div>
-	    		</li>
-	 		    <li class="col 12 h-optionLi">
-	    			<hr>
-	 		    	<div class="row">
-	 		    		<div class="col s2">
-	 		    			<i class="fa fa-credit-card fa-2x" aria-hidden="true"></i>
-	 		    		</div>
-	 		    		<div class="col s9">
-	 		    			<a class="" href="#">Payment</a>
-	 		    		</div>
-	 		    	</div>
-	 		    </li>
-	    		<li class="col 12 h-optionLi">
-	 		    	<hr>
-	    			<div class="row">
-	    				<div class="col s2">
-	    					<i class="fa fa-question fa-2x" aria-hidden="true"></i>
-	    				</div>
-	    				<div class="col s9">
-	    					<a class="" href="#">Help</a>
-	    				</div>
+				</div>
+    		</li>
+    		<li class="col s12 h-optionLi">
+    		<hr>
+				<div class="row">
+					<div class="col s2">
+						<i class="fa fa-gift fa-2x" aria-hidden="true"></i>
+					</div>
+					<div class="col s9">
+    					<a class="" href="#">Free Rides</a>
+					</div>
+				</div>
+    		</li>
+    		<li class="col s12 h-optionLi">
+    		<hr>
+	    		<div class="row">
+	    			<div class="col s2">
+	    				<i class="fa fa-history fa-2x" aria-hidden="true"></i>
 	    			</div>
-	    		</li>
-	    		<li class="col 12 h-optionLi">
-	    		<hr>
-	    			<div class="row">
-	    				<div class="col s2">
-	    					<i class="fa fa-cog fa-2x" aria-hidden="true"></i>
-	    				</div>
-	    				<div class="col s9">
-	    					<a class="" href="#">Settings</a>
-	    				</div>
+	    			<div class="col s10">
+    					<a class="" href="#">Ride history</a>
 	    			</div>
-	    		</li>
-	  		</ul>
-  			
-  		</div>
-
-		<div id="mapa" class="mapa"></div>
+	    		</div>
+    		</li>
+ 		    <li class="col s12 h-optionLi">
+    			<hr>
+ 		    	<div class="row">
+ 		    		<div class="col s2">
+ 		    			<i class="fa fa-credit-card fa-2x" aria-hidden="true"></i>
+ 		    		</div>
+ 		    		<div class="col s9">
+ 		    			<a class="" href="#">Payment</a>
+ 		    		</div>
+ 		    	</div>
+ 		    </li>
+    		<li class="col s12 h-optionLi">
+ 		    	<hr>
+    			<div class="row">
+    				<div class="col s2">
+    					<i class="fa fa-question fa-2x" aria-hidden="true"></i>
+    				</div>
+    				<div class="col s9">
+    					<a class="" href="#">Help</a>
+    				</div>
+    			</div>
+    		</li>
+    		<li class="col s12 h-optionLi">
+    		<hr>
+    			<div class="row">
+    				<div class="col s2">
+    					<i class="fa fa-cog fa-2x" aria-hidden="true"></i>
+    				</div>
+    				<div class="col s9">
+    					<a class="" href="#">Settings</a>
+    				</div>
+    			</div>
+    		</li>
+  		</ul>
+		<div id="map" class="mapa"></div>
+		<section>
+         	<div class="direccion">
+         		<div class="row">
+	            	<div class="input-direccion">
+	               		<span>
+		               		<input id="direccion-cambiar" class="col s12">
+	               			<i class="fa fa-search fa-lg col s2 buscar" aria-hidden="true" id="buscar"></i>
+	               		</span>
+	            	</div>
+         		</div>
+            	<div class="direccion-actual" id="direccion">
+               		<span></span>
+            	</div>
+         	</div>
+      	</section>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASeGtVt5GP_KjUiQWTroXQAymhvJm-Fho"
         async defer></script>
 		<script src="javascript/jquery.js" type="text/javascript"></script>
